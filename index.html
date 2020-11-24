@@ -24,6 +24,13 @@
 
 <body>
 
+  <div class= "ventana" id="vent">
+    <div id="cerrar">
+      <a href="javascript:cerrar()"><img src= "img/error.png"></a>
+    </div>
+      Bienvenido a nuestra Pagina Web
+  </div>
+
 
   <h1 class="site-heading text-center text-white d-none d-lg-block">
     <span class="site-heading-upper text-primary mb-3">Tú mejor opción en Licores</span>
@@ -58,6 +65,31 @@
     </div>
   </nav>
 
+  <section id="contenedor">
+      <a href="javascript:abrir()">Abrir ventana</a>
+  </section>
+
+
+  <section class="page-section clearfix">
+    <div class="container">
+      <div class="intro">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded text-center" src="img/intro4.jpg" alt="">
+        <!--<div class="intro-text left-0 text-center bg-faded p-5 rounded">
+          <h2 class="section-heading mb-4">
+            <span class="section-heading-upper">REFRESCANTE</span>
+            <span class="section-heading-lower">"DISFRUTA LO MEJOR DE TOMAR"</span>
+          </h2>
+            <p class="mb-3">Taberna Segura es un emprendimiento de venta y distribución de bebida Alcohólicas y no alcohólicas, que tiene alrededor de 9 meses establecido en el mercado y reconocidos por sus clientes en el cumplimiento de las entregas a domicilio, con una gran variedad de promociones, cuenta con un local físicamente.
+            </p>
+          <div class="intro-button mx-auto">
+            <a class="btn btn-primary btn-xl" href="#">Sin lo Malo de Exederte..!</a>
+          </div> 
+        </div>-->
+      </div>
+    </div>
+  </section>
+
+
   <section class="page-section clearfix">
     <div class="container">
       <div class="intro">
@@ -87,6 +119,13 @@
               <span class="section-heading-lower">Dirección</span>
             </h2>
             <p class="mb-0">Quisquis 206 entre Riobamba y Rumichaca, sus canales digitales son; Facebook e Instagram y Google My Business, el número a donde se comunican se lo encuentra directamente enlazado a WhatsApp!</p>
+            <div class="social">
+              <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+              <a href="#"><img src="img/WhatsApp.png" alt="WhatsApp></a>
+              <a href="#"><img src="img/Google.png" alt="Google"></a>
+              <a href="#"><img src="img/instagram.png" alt="instagram"></a>
+            </div>
+          
           </div>
         </div>
       </div>
@@ -103,6 +142,22 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-</body>
+  <div class="container">
+		<!-- (p>lorem)*20 (código a usar si tienes instalada la extensión emmet)-->
+	</div>
+
+<script>
+  function abrir () {
+    document.getElementById ("vent").style.display="block";
+  }
+
+  function cerrar () {
+
+    document.getElementById("vent").style.display="none";
+  }
+</script>
+
+
+  </body>
 
 </html>
